@@ -1,8 +1,9 @@
 import React from 'react';
 // import axios from 'axios';
 import './Index.css';
+import {Link} from 'react-router-dom';
 
-class merong extends React.Component {
+class Index extends React.Component {
   // state = {
       // 필요하면 설정 고고~
   // };
@@ -13,9 +14,16 @@ class merong extends React.Component {
     // 필요하면 state 불러오고
     // const { stateA, stateB } = this.state;
     return(
-      <h1>Welcome to Palette!</h1>
+      <div>
+        <h1>Welcome to Palette!</h1>
+        <p>description</p>
+        <Link to={{pathname:'/signin'}}>signin</Link>
+        &nbsp;/&nbsp;
+        <Link to={{pathname:'/signup'}}>signup</Link>
+      </div>
+
     )
   }
 }
 
-export default merong;
+export default Index;
