@@ -17,9 +17,13 @@ class Index extends React.Component {
       <div>
         <h1>Welcome to Palette!</h1>
         <p>description</p>
-        <Link to={{pathname:'/signin'}}>signin</Link>
+        <Link to={{pathname:'/signin'}}>
+          <button className='signin'>Sign In</button>
+        </Link>
         &nbsp;/&nbsp;
-        <Link to={{pathname:'/signup'}}>signup</Link>
+        <Link to={{pathname:'/signup'}}>
+          <button class='signup'>Sign Up</button>
+        </Link>
       </div>
 
     )
