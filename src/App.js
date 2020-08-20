@@ -9,7 +9,7 @@ import Main from "./routes/Main";
 function App() {
   return (
     <BrowserRouter>
-      <Route path='/' component={Index}/>
+      <Route path='/' exact='true' component={Index}/>
       <Route path='/signin' component={Signin}/>
       <Route path='/signup' component={Signup}/>
       <Route path='/main' component={Main}/>

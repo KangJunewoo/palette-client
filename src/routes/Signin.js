@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 // import axios from 'axios';
 import './Index.css';
 import { Link } from 'react-router-dom';
+import Index from './Index.js';
 
 class Signin extends React.Component {
 
   render() {
     return(
       <div>
+        <Index/>
         <h1>SignIn</h1>
         {/* TODO : 소셜로그인 구현 */}
         <a href="https://www.google.com/" class="fa fa-google"/>
