@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Caladea:400&display=swap");
+@import "_variables";
+@import "_titles";
+
+* {
+  // 박스테두리 포함해 크기가 지정됨. grid에서 필수옵션인가보다.
+  box-sizing: border-box;
+}
+
+.center{
+  text-align: center;
+}
+
+.bg-white{
+  background-color:#FFFFFF;
+}
+
+.bg-gray{
+  background-color:#F2F2F2;
+  // text-align: center;
+}
+
+.c2{
+  display:flex;
+  // justify-content:space-around;
+
+}
+
+a {
+  // 밑줄치는 효과 없애고, 칼라변동 없앰
+  text-decoration: none;
+  color: inherit;
+  @extend %miniTitle;
+}
+
+body {
+  font-family: "Caladea";
+  padding-top: 70px;
+}
+
+body > *:not(.footer) {
+  padding: 0px 140px;
+}
+
+header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0px 140px;
+  background-color: white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      text-transform: uppercase;
+      font-size: 10px;
+      @extend %miniTitle;
+      li{
+        margin: 0px 10px 10px;
+      }
+    }
+  }
+}
+
+.box-center-thin {
+  // height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //color: white;
+
+  margin: 0px $sideSpace;
+  margin-bottom: 80px;
+  
+  h4 {
+    @extend %miniTitle;
+    width: 50%;
+    text-align:center;
+  }
+
+  h3 {
+    font-size: 48px;
+    width: 50%;
+    text-align: center;
+    // margin-bottom: 50px;
+  }
+  a {
+    width: 15%;
+    background-color: #00B14A;
+    padding: 20px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    @extend %miniTitle;
+    font-size: 10px;
+    border-radius: 10%;
+    transition: color 0.3s linear, background 0.3s linear;
+    &:hover {
+      background-color: greenyellow;
+      color: white;
+    }
+  }
+}
+
+.box-center-thick {
+  // height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //color: white;
+
+  margin: 0px $sideSpaceThickBox;
+  margin-bottom: 80px;
+  
+  h4 {
+    @extend %miniTitle;
+    width: 80%;
+    // text-align:center;
+  }
+
+  h3 {
+    font-size: 48px;
+    width: 80%;
+    // text-align: center;
+    // margin-bottom: 50px;
+  }
+  a {
+    width: 15%;
+    background-color: #00B14A;
+    padding: 20px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    @extend %miniTitle;
+    font-size: 10px;
+    border-radius: 10%;
+    transition: color 0.3s linear, background 0.3s linear;
+    &:hover {
+      background-color: greenyellow;
+      color: white;
+    }
+  }
+}
+
+.box3{
+  display:flex;
+  .box{
+    border-radius: 10%;
+    background:#FFFFFF;
+    width:50%;
+    height:50%;
+    margin:10px;
+    
+  }
+}
+
+.clubs{
+  display:grid;
+  grid-template-columns: 300px 300px 300px 300px 300px;
+  li{
+    background-color:#FFFFFF;
+    text-align:center;
+    margin:20px;
+  }
+}
+
+
+
+.under-hero {
+  height: 80vh;
+  display: flex;
+  width: 100%;
+  margin-bottom: 80px;
+  .under-hero__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h4 {
+        @extend %miniTitle;
+        margin-bottom: 30px;
+      }
+      h3 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      a {
+        border: 1px solid black;
+        padding: 20px;
+      }
+    }
+  }
+  img,
+  div {
+    width: 50%;
+  }
+}
+
+.blog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 60vh);
+  margin-bottom: 80px;
+  .blog__post {
+    background-color: $bg;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &:nth-child(even) {
+      img {
+        order: 1;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .post__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .post__date {
+        @extend %miniTitle;
+        margin-bottom: 70px;
+      }
+      h4 {
+        font-size: 32px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 410px);
+  .gallery__poster {
+    height: 100%;
+    cursor: pointer;
+    img {
+      max-width: 100%;
+      height: 100%;
+      transition: opacity 0.3s linear;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.footer {
+  margin-top: 100px;
+  background-color: $bg;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 65px 0px;
+  .footer__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @extend %miniTitle;
+    .column__title {
+      margin-bottom: 50px;
+      opacity: 0.5;
+    }
+    ul {
+      text-align: center;
+      li {
+        margin-bottom: 15px;
+      }
+    }
+    &:nth-child(2) {
+      border-right: 1px solid black;
+      border-left: 1px solid black;
+    }
+  }
+}
