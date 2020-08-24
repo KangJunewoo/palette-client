@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dest/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <title>Landing Page</title>
 </head>
 
@@ -15,9 +14,9 @@
     <nav>
       <ul>palette</ul>
       <ul>
-        <li>About</li>
-        <li>Features</li>
-        <li>Contact us</li>
+        <li><a>About</a></li>
+        <li><a>Features</a></li>
+        <li><a class='bg-green'>Contact Us</a></li>
       </ul>
     </nav>
   </header>
@@ -34,7 +33,7 @@
   <div class="bg-gray">
     <div class="box-center-thick">
       <div class="c2">
-        <div class="c">
+        <div class="c" style='margin-top:40px;'>
           <h3>Palette was built for <span class="green">students</span>, by <span class="green">students</span>.</h3>
           <h4>There are millions of extracurriculars organized every year for students, from debate clubs to
             MUN conferences, from hackathons to science fairs.</h4>
@@ -99,53 +98,62 @@
       <!-- 리액트에서 처리 예정 -->
       <ul class="clubs4">
         <li>🎤 Debate Club</li>
-        <li>🇺🇳 Debate Club</li>
-        <li>🎸 Debate Club</li>
-        <li>🏀 Debate Club</li>
+        <li>🇺🇳 MUN Club</li>
+        <li>🎸 Rock Club</li>
+        <li>🏀 Sports Club</li>
       </ul>
+      <img src="s1.png" alt="" class="screenshot">
     </div>
-    <img src="s1.png" alt="" class="screenshot">
+    
 
     <div class="people3">
       <div class="person">
-        <h3>"Finally. The all-in-one solution we were waiting for."</h3>
+        <div class="comment">
+          <h3>"Finally. The all-in-one solution we were waiting for."</h3>
+        </div>
+        
         <img src="6.png" alt="">
         <h4>Seokho Yoon</h4>
         <h5>Convener</h5>
         <h5>World Universities Debating Championship</h5>
       </div>
       <div class="person">
-        <h3>"Finally. The all-in-one solution we were waiting for."</h3>
+        <div class="comment">
+          <h4>"This is the entire extracurricular experience brought online"</h4>
+        </div>
+        
         <img src="6.png" alt="">
         <h4>Seokho Yoon</h4>
         <h5>Convener</h5>
         <h5>World Universities Debating Championship</h5>
       </div>
       <div class="person">
-        <h3>"Finally. The all-in-one solution we were waiting for."</h3>
+        <div class="comment">
+          <h5>"No more Facebook for recruitment, Excel for finances, Slack for announcements, Asana for tasks, Google Forms for serveys, Drive for files. All the tools your club needs in one place."</h5>
+        </div>
+        
         <img src="6.png" alt="">
-        <h4>Seokho Yoon</h4>
-        <h5>Convener</h5>
-        <h5>World Universities Debating Championship</h5>
+        <h4>Jihee Yun</h4>
+        <h5>President</h5>
+        <h5>Korea Intervarsity Debate Association</h5>
       </div>
     </div>
+    <br><br>
     <div class="box-center-thin">
       <h3>Personalized Management Tools</h3>
       <h4>Pick and choose the tools your club needs</h4>
     </div>
-
-    <!-- 일단 화면 넘어가는거 이미지로 처리 -->
     <div class="clubs10">
       <li>
         <input type="checkbox" name="" id="">
-        <h3>🎟</h3>
+        <h1>🎟</h1>
         <h3>Tickets</h3>
         <h4>Promote events, sell tickets, and
           manage participants.</h4>
       </li>
       <li>
         <input type="checkbox" name="" id="">
-        <h3>☎</h3>
+        <h1>☎</h1>
         <h3>Recruitment</h3>
         <h4>Receive applications,
           organize auditions, and easily integrate
@@ -153,7 +161,7 @@
       </li>
       <li>
         <input type="checkbox" name="" id="">
-        <h3>💵</h3>
+        <h1>💵</h1>
         <h3>Finances</h3>
         <h4>Keep track of your societyʼs
           budget through a simple
@@ -161,28 +169,28 @@
       </li>
       <li>
         <input type="checkbox" name="" id="">
-        <h3>📚</h3>
+        <h1>📚</h1>
         <h3>Tickets</h3>
         <h4>Promote events, sell tickets, and
           manage participants.</h4>
       </li>
       <li>
         <input type="checkbox" name="" id="">
-        <h3>🦕</h3>
+        <h1>🦕</h1>
         <h3>Tickets</h3>
         <h4>Promote events, sell tickets, and
           manage participants.</h4>
       </li>
       <li>
         <input type="checkbox" name="" id="">
-        <h3>📷</h3>
+        <h1>📷</h1>
         <h3>Gallery</h3>
         <h4>Share and organize your club
           photos with your members.</h4>
       </li>
       <li>
         <input type="checkbox" name="" id="">
-        <h3>🏆</h3>
+        <h1>🏆</h1>
         <h3>Trophy Room</h3>
         <h4>Showcase and organize club
           medals, trophies, certificates,
@@ -190,31 +198,31 @@
       </li>
       <li>
         <input type="checkbox" name="" id="">
-        <h3>📅</h3>
+        <h1>📅</h1>
         <h3>Calendar</h3>
         <h4>A centralized calendar for all
           members to access.</h4>
       </li>
       <li>
         <input type="checkbox" name="" id="">
-        <h3>📌</h3>
+        <h1>📌</h1>
         <h3>Tasks</h3>
         <h4>Assign and manage club tasks
           through a project workflow tool.</h4>
       </li>
       <li>
         <input type="checkbox" name="" id="">
-        <h3>🧮</h3>
+        <h1>🧮</h1>
         <h3>Player Stats</h3>
         <h4>Keep track of the performance
           of your teamʼs players.</h4>
       </li>
     </div>
   </div>
-  
+  <br><br>
   <div class="bg-gray">
     <div class="box-center-thin">
-      <img src="4.png" alt="">
+      <img src="4-1.png" alt="">
       <h3>Discover incredible <span class="red">opportunities</span></h3>
       <h4>We're aggregating and organizing extracurricular directories scattered across the web and creating a
         centralized
