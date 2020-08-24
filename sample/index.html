@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dest/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
   <title>Landing Page</title>
 </head>
 
@@ -97,12 +98,18 @@
 
       <!-- 리액트에서 처리 예정 -->
       <ul class="clubs4">
-        <li>🎤 Debate Club</li>
-        <li>🇺🇳 MUN Club</li>
-        <li>🎸 Rock Club</li>
-        <li>🏀 Sports Club</li>
+        <li class='selected'>🎤 Debate Club</li>
+        <li class='normal'>
+          <div class="c2">
+            <div class="c"><img src="un.png" alt=""></div>
+            <div class="c">&nbsp;MUN Club</div>
+          </div>
+          <!-- <img src="un.png" alt=""> MUN Club</li> -->
+        <li class='normal'>🎸 Rock Club</li>
+        <li class='normal'>🏀 Sports Club</li>
       </ul>
       <img src="s1.png" alt="" class="screenshot">
+      <br/><br/>
     </div>
     
 
@@ -145,14 +152,14 @@
     </div>
     <div class="clubs10">
       <li>
-        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="" checked>
         <h1>🎟</h1>
         <h3>Tickets</h3>
         <h4>Promote events, sell tickets, and
           manage participants.</h4>
       </li>
       <li>
-        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="" checked>
         <h1>☎</h1>
         <h3>Recruitment</h3>
         <h4>Receive applications,
@@ -168,28 +175,28 @@
           accounting tool.</h4>
       </li>
       <li>
-        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="" checked>
         <h1>📚</h1>
         <h3>Tickets</h3>
         <h4>Promote events, sell tickets, and
           manage participants.</h4>
       </li>
       <li>
-        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="" checked>
         <h1>🦕</h1>
         <h3>Tickets</h3>
         <h4>Promote events, sell tickets, and
           manage participants.</h4>
       </li>
       <li>
-        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="" checked>
         <h1>📷</h1>
         <h3>Gallery</h3>
         <h4>Share and organize your club
           photos with your members.</h4>
       </li>
       <li>
-        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="" checked>
         <h1>🏆</h1>
         <h3>Trophy Room</h3>
         <h4>Showcase and organize club
@@ -197,7 +204,7 @@
           and other achievements.</h4>
       </li>
       <li>
-        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="" checked>
         <h1>📅</h1>
         <h3>Calendar</h3>
         <h4>A centralized calendar for all
@@ -211,7 +218,7 @@
           through a project workflow tool.</h4>
       </li>
       <li>
-        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="" checked>
         <h1>🧮</h1>
         <h3>Player Stats</h3>
         <h4>Keep track of the performance
@@ -228,7 +235,7 @@
         centralized
         registration format.</h4>
         <img src="s2.png" alt="" class="screenshot">
-
+        <br/><br/>
     </div>
 
     
@@ -241,8 +248,8 @@
         to
         colleges or recruiters.</h4>
         <ul class="clubs2">
-          <li>🖥 Web</li>
-          <li>📱 Mobile</li>
+          <li class='selected'>🖥 Web</li>
+          <li class='normal'>📱 Mobile</li>
         </ul>
         <img src="s3.png" alt="" class='screenshot'>
     </div>
@@ -268,6 +275,7 @@
       <div class="box-center-thin">
         <h3>Want to get started asap?</h3>
         <a href="">Sign up for closed-beta</a>
+        <br/><br/>
       </div>
       
 
