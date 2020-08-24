@@ -1,5 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Caladea:400&display=swap");
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
 @import url('https://rsms.me/inter/inter.css');
 @import "_variables";
 @import "_titles";
@@ -62,7 +66,7 @@
   display:flex;
   align-content: center;
   justify-content:center;
-
+  flex:1;
 }
 
 a {
@@ -73,8 +77,10 @@ a {
 }
 
 body {
-  font-family: "Inter";
+  font-family: "SF Pro Rounded";
+  // font-weight:bold;
   padding-top: 70px;
+  max-width:100vw !important;
 }
 
 body > *:not(.footer) {
@@ -138,9 +144,9 @@ header {
     // margin-bottom: 50px;
   }
   a {
-    width: 20%;
+    width: 300px;
     background-color: #00B14A;
-    padding: 20px 0px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     color: white;
@@ -182,7 +188,7 @@ header {
   a {
     width: 15%;
     background-color: #00B14A;
-    padding: 20px 0px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     color: white;
@@ -215,13 +221,13 @@ header {
 
 .clubs{
   display:grid;
-  grid-template-columns: 300px 300px 300px 300px 300px;
+  grid-template-columns: 250px 250px 250px 250px 250px;
   list-style:none;
   li{
     background-color:#FFFFFF;
     text-align:center;
     border: solid #e6e6e6 thin;
-    margin:20px;
+    margin:10px;
     font-weight:550;
     font-size: 20px;
     border-radius:10px;
@@ -296,6 +302,8 @@ header {
 .clubs10{
   display:grid;
   grid-template-columns: 300px 300px 300px 300px 300px;
+  overflow-x:auto;
+  // max-width:100vw;
   list-style:none;
   li{
     height:250px;
