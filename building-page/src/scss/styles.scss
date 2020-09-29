@@ -96,6 +96,31 @@ ul{
   }
 }
 
+.clubs10 {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  list-style: none;
+  h4{
+    width:80%;
+    margin:auto;
+  }
+  li {
+    height: 250px;
+    background-color: #ffffff;
+    text-align: center !important;
+    border: solid #f2f2f2 thin;
+    margin: 20px;
+    // font-weight:550;
+    // font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2.5px 2.5px #e6e6e6;
+    input {
+      margin-left: 230px;
+    }
+  }
+}
+
 a {
   // 밑줄치는 효과 없애고, 칼라변동 없앰
   text-decoration: none;
