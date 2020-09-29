@@ -1,48 +1,95 @@
 (() => {
-  const debateClub = document.getElementById("debateClub");
-  const munClub = document.getElementById("munClub");
-  const rockClub = document.getElementById("rockClub");
-  const sportsClub = document.getElementById("sportsClub");
-  const webTab = document.getElementById("web");
-  const mobileTab = document.getElementById("mobile");
+  const generalInfoButton = document.getElementById('general-info-button');
+  const toolsButton = document.getElementById("tools-button");
+  const pageAdminsButton = document.getElementById("page-admins-button");
+  const inviteMembersButton = document.getElementById("invite-members-button");
+  const generalInfo = document.getElementById('general-info');
+  const tools = document.getElementById('tools');
+  const pageAdmins = document.getElementById('page-admins');
+  const inviteMembers = document.getElementById('invite-members');
+  const next1 = document.getElementById('next1');
+  const next2 = document.getElementById('next2');
+  const next3 = document.getElementById('next3');
 
-  debateClub.onclick = () => {
-    if (debateClub.classList.contains("selcted")) return;
-    debateClub.classList.add("selected");
-    munClub.classList.remove("selected");
-    rockClub.classList.remove("selected");
-    sportsClub.classList.remove("selected");
+
+  generalInfoButton.onclick = () => {
+    if (generalInfoButton.classList.contains("selcted")) return;
+    generalInfoButton.classList.add("selected");
+    toolsButton.classList.remove("selected");
+    pageAdminsButton.classList.remove("selected");
+    inviteMembersButton.classList.remove("selected");
+    generalInfo.style.display='block';
+    tools.style.display='none';
+    pageAdmins.style.display='none';
+    inviteMembers.style.display='none';
   };
-  munClub.onclick = () => {
-    if (munClub.classList.contains("selcted")) return;
-    debateClub.classList.remove("selected");
-    munClub.classList.add("selected");
-    rockClub.classList.remove("selected");
-    sportsClub.classList.remove("selected");
+  toolsButton.onclick = () => {
+    if (toolsButton.classList.contains("selcted")) return;
+    generalInfoButton.classList.remove("selected");
+    toolsButton.classList.add("selected");
+    pageAdminsButton.classList.remove("selected");
+    inviteMembersButton.classList.remove("selected");
+    generalInfo.style.display='none';
+    tools.style.display='block';
+    pageAdmins.style.display='none';
+    inviteMembers.style.display='none';
   };
-  rockClub.onclick = () => {
-    if (rockClub.classList.contains("selcted")) return;
-    debateClub.classList.remove("selected");
-    munClub.classList.remove("selected");
-    rockClub.classList.add("selected");
-    sportsClub.classList.remove("selected");
+  pageAdminsButton.onclick = () => {
+    if (pageAdminsButton.classList.contains("selcted")) return;
+    generalInfoButton.classList.remove("selected");
+    toolsButton.classList.remove("selected");
+    pageAdminsButton.classList.add("selected");
+    inviteMembersButton.classList.remove("selected");
+    generalInfo.style.display='none';
+    tools.style.display='none';
+    pageAdmins.style.display='block';
+    inviteMembers.style.display='none';
   };
-  sportsClub.onclick = () => {
-    if (sportsClub.classList.contains("selcted")) return;
-    debateClub.classList.remove("selected");
-    munClub.classList.remove("selected");
-    rockClub.classList.remove("selected");
-    sportsClub.classList.add("selected");
+  inviteMembersButton.onclick = () => {
+    if (inviteMembersButton.classList.contains("selcted")) return;
+    generalInfoButton.classList.remove("selected");
+    toolsButton.classList.remove("selected");
+    pageAdminsButton.classList.remove("selected");
+    inviteMembersButton.classList.add("selected");
+    generalInfo.style.display='none';
+    tools.style.display='none';
+    pageAdmins.style.display='none';
+    inviteMembers.style.display='block';
   };
 
-  webTab.onclick = () => {
-    if (webTab.classList.contains("selected")) return;
-    webTab.classList.add("selected");
-    mobileTab.classList.remove("selected");
-  };
-  mobileTab.onclick = () => {
-    if (mobileTab.classList.contains("selected")) return;
-    webTab.classList.remove("selected");
-    mobileTab.classList.add("selected");
-  };
+  next1.onclick = ()=> {
+    if (toolsButton.classList.contains("selcted")) return;
+    generalInfoButton.classList.remove("selected");
+    toolsButton.classList.add("selected");
+    pageAdminsButton.classList.remove("selected");
+    inviteMembersButton.classList.remove("selected");
+    generalInfo.style.display='none';
+    tools.style.display='block';
+    pageAdmins.style.display='none';
+    inviteMembers.style.display='none';
+  }
+
+  next2.onclick = () => {
+    if (pageAdminsButton.classList.contains("selcted")) return;
+    generalInfoButton.classList.remove("selected");
+    toolsButton.classList.remove("selected");
+    pageAdminsButton.classList.add("selected");
+    inviteMembersButton.classList.remove("selected");
+    generalInfo.style.display='none';
+    tools.style.display='none';
+    pageAdmins.style.display='block';
+    inviteMembers.style.display='none';
+  }
+
+  next3.onclick = () => {
+    if (inviteMembersButton.classList.contains("selcted")) return;
+    generalInfoButton.classList.remove("selected");
+    toolsButton.classList.remove("selected");
+    pageAdminsButton.classList.remove("selected");
+    inviteMembersButton.classList.add("selected");
+    generalInfo.style.display='none';
+    tools.style.display='none';
+    pageAdmins.style.display='none';
+    inviteMembers.style.display='block';
+  }
 })();

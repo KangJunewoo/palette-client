@@ -13,6 +13,16 @@
   box-sizing: border-box;
 }
 
+#tools{
+  display:none;
+}
+#page-admins{
+  display:none;
+}
+#invite-members{
+  display:none;
+}
+
 .center {
   text-align: center !important;
 }
@@ -60,7 +70,12 @@ ul{
   list-style:none;
   margin:0;
   padding:0;
-  // 선택시 들어오는 효과 추가
+  li.selected{
+    background-color:#4b4b4b !important;
+    color:white;
+    border-radius:5px;
+    width:50%;
+  }
 }
 
 .clubs {
@@ -152,6 +167,17 @@ footer {
   color:#1da1f2;
 }
 
+.next{
+  font-size:20px;
+  margin:auto;
+  margin-top:50px;
+  display:block;
+  background-color:#555555;
+  color:white;
+  border-radius:30px;
+  padding-left:50px;
+  padding-right:50px;
+}
 
 // .green {
 //   color: #00b14a !important;
