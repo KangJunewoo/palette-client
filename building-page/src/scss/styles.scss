@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@import url("https://rsms.me/inter/inter.css");
+@import "_variables";
+@import "_titles";
+
+* {
+  // 박스테두리 포함해 크기가 지정됨. grid에서 필수옵션인가보다.
+  box-sizing: border-box;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.underline {
+  font-weight: bold !important;
+  text-decoration: underline !important;
+}
+
+.contents{
+  display:flex;
+
+}
+.left{
+  width:20%;
+  margin:20px;
+}
+.center{
+  width:60%;
+}
+.right{
+  width:20%;
+}
+
+ul{
+  list-style:none;
+  // 선택시 들어오는 효과 추가
+}
+
+a {
+  // 밑줄치는 효과 없애고, 칼라변동 없앰
+  text-decoration: none;
+  color: inherit;
+  @extend %miniTitle;
+}
+
+body {
+  font-family: "SF Pro Rounded";
+  // font-weight:bold;
+  padding-top: 70px;
+  max-width: 100vw !important;
+}
+
+body > *:not(.footer) {
+  padding: 0px 140px;
+}
+
+header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0px 140px;
+  background-color: white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+      margin: 10px;
+      font-size: 30px;
+      @extend %miniTitle;
+      list-style: none;
+      li {
+        margin: 0px 10px 10px;
+      }
+    }
+  }
+}
+
+
+footer {
+  h4 {
+    color: #636363;
+  }
+}
+
+
+
+// .green {
+//   color: #00b14a !important;
+// }
+
+// .skyblue {
+//   color: #409cd5 !important;
+// }
+
+// .red {
+//   color: #ff6369 !important;
+// }
+
+// .yellow {
+//   color: #d6ca41 !important;
+// }
