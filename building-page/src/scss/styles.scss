@@ -30,16 +30,55 @@
   width:20%;
   margin:20px;
 }
-.center{
+.middle{
   width:60%;
 }
 .right{
   width:20%;
 }
+.bg-gray {
+  background-color: #f2f2f2 !important;
+  padding:20px;
+  border-radius: 10px;
+  box-shadow:5px 5px 5px #e6e6e6;
+  // text-align: center;
+}
+input[type=text], select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
+h4{
+  color:gray;
+}
 ul{
   list-style:none;
+  margin:0;
+  padding:0;
   // 선택시 들어오는 효과 추가
+}
+
+.clubs {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15%;
+  list-style: none;
+  li {
+    background-color: #ffffff;
+    text-align: center;
+    border: solid #e6e6e6 thin;
+    margin: 5px;
+    // font-weight: 550;
+    font-size: 12px;
+    border-radius: 10px;
+    // height: 50px;
+    padding: 5px;
+    box-shadow: 1px 1px #e6e6e6;
+  }
 }
 
 a {
@@ -96,7 +135,22 @@ footer {
     color: #636363;
   }
 }
-
+.fa-facebook-square {
+  background: white;
+  color:#3b5998;
+}
+.fa-linkedin-square {
+  background: white;
+  color:#0e76a8;
+}
+.fa-instagram {
+  background: white;
+  color:#c32aa3;
+}
+.fa-twitter-square {
+  background: white;
+  color:#1da1f2;
+}
 
 
 // .green {
