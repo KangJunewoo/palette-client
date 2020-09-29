@@ -169,6 +169,17 @@ header {
   }
 }
 
+.adminrole{
+  display:flex;
+  justify-content: left;
+}
+
+.admin{
+  flex:2;
+}
+.role{
+  flex:1;
+}
 
 footer {
   h4 {
